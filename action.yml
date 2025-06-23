@@ -1,0 +1,14 @@
+name: "my first container action"
+description: lab '
+author: "Maxime Ancelin"
+inputs:
+  myInput:
+    description: "greeting to use"
+    required: true
+    default: "User"
+outputs:
+  myOutput:
+    description: "total memory"
+runs:
+  using: "docker"
+  image: "Dockerfile"
